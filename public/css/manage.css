@@ -1,0 +1,12 @@
+.table td.fit,
+.table th.fit {
+    white-space: nowrap;
+    width: 1%;
+}
+.create-category{
+    margin: 3vw 3vw 3vw 3vw;
+}
+
+td img{
+    max-width: 14vw;
+}

@@ -1,0 +1,57 @@
+.footer{
+    height: auto;
+    min-height: 10vh;
+    background: #313131;
+    z-index: 1;
+}
+.container{
+    padding:0;
+}
+.section-footer{
+
+    padding: 75px 0 42px 0;
+}
+.information{
+    color: #999999;
+    margin-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'M PLUS Rounded 1c',sans-serif!important;
+}
+.title-heading{
+    margin-bottom: 15px;
+    font-weight: 700px;
+    font-size: 16px;
+    color: #cccccc;
+    font-family: 'M PLUS Rounded 1c',sans-serif!important;
+}
+li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.footer-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(//cdn.shopify.com/s/files/1/0529/2641/5045/t/5/assets/FooterIcon.png?v=8662200297865104181) no-repeat;
+    background-size: contain;
+    transform: translateY(20%);
+    margin-right: 8px;
+}
+.sns-icon{
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    fill: #999999;
+}
+
+.outer-footer{
+    margin-top: 20px;
+}
+.copyright{
+    color: #999999;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 12px;
+    font-family: 'M PLUS Rounded 1c',sans-serif!important;
+}
