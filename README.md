@@ -6,7 +6,7 @@
 On your local machine, clone this repo:
 
 ```bash
-git clone https://github.com/ORLANDOWTP/holOShop
+git clone https://github.com/ORLANDOWTP/holoshoptemplate
 cd holOShop
 ```
 
