@@ -36,15 +36,16 @@ MAIL_USERNAME=Get your username at mailtrap.io
 MAIL_PASSWORD=Get your password at mailtrap.io
 MAIL_ENCRYPTION=tls
 
-#These are used for google recaptcha configuration, you also can generate captcha key it yourself through https://www.google.com/recaptcha/admin
-CAPTCHA_KEY=6Lf_IrsZAAAAAJWgTnHNd41OIq1wt2uvRuYyxgGb
-CAPTCHA_SECRET_KEY=6Lf_IrsZAAAAALIFGgJzty0qAvjkdN4uhzY5fwzo
 ...
 
 ```
 #### Install Vendor
 ```bash
 composer i
+```
+#### Link Storage
+```bash
+php artisan storage:link
 ```
 #### Run migration and seeder
 ```bash
