@@ -17,7 +17,6 @@
             </thead>
             <tbody>
                 {{-- display all categories (EDIT and DELETE MODAL data-id must be filled with looped product object to trigger modal) --}}
-                @foreach ($categories as $c)
                     <tr>
                         <th scope="row" class="fit">number</th>
                         <td class="fit">category id</td>
@@ -35,9 +34,6 @@
 
                         </td>
                     </tr>
-
-
-                @endforeach
                 {{-- end of display all categories --}}
             </tbody>
         </table>
@@ -62,6 +58,7 @@
 
                             <div class="mb-3">
                                 <label for="categoryName" class="form-label">Category Name</label>
+                                <!-- Input Category Name -->
                                 <input class="form-control" id="categoryName" name="category_name" value="{{old('category_name')}}" type="text" required>
                             </div>
                             @if ($errors->hasBag('insertCategory'))

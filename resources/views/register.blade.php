@@ -29,9 +29,13 @@
                            class="form-control mb-2" placeholder="Confirm Password">
                     <div class="d-flex justify-content-center">
                         {{-- captcha component here --}}
+                        <div class="g-recaptcha"  data-sitekey="{{config('google_captcha.site_key')}}"></div>
+                        <script src="https://www.google.com/recaptcha/api.js"></script>
                     </div>
                     {{-- Show first error if any here --}}
-
+                    @if ($errors->any())
+                        {{$errors->first()}}
+                    @endif
                     <div class="d-flex flex-column align-items-center justify-content-lg-around">
                         <button class="btn btn-primary w-100">Register</button>
                         <small>or</small>

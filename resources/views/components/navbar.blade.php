@@ -7,7 +7,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    @if (auth()->user()->role->role_name=="admin")
+                    <!-- For Admin Only -->
                         <li class="nav-item">
                             <a class="nav-link {{ Request::is('manage/product') ? 'active' : '' }}"
                                 href="{{ url('/manage/product') }}">Manage Product</a>
@@ -16,7 +16,8 @@
                             <a class="nav-link {{ Request::is('manage/category') ? 'active' : '' }}"
                                 href="{{ url('/manage/category') }}">Manage Product Category</a>
                         </li>
-                    @endif
+
+
                     <li class="nav-item">
                         <a class="nav-link  {{ Request::is('/') ? 'active' : '' }}"
                             href="{{ url('/') }}">Products</a>
@@ -27,9 +28,8 @@
                 <li class="nav-item dropdown me-2">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Welcome, {{Auth::User()->username}}
                     </a>
-
+                    <!-- if user already login -->
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="{{ url('/logout') }}">Logout</a></li>
                     </ul>

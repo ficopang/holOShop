@@ -34,7 +34,7 @@
                                             <input class="form-check-input categories" type="checkbox" onChange="this.form.submit()" name="" value="" id="flexCheckDefault"
                                             {{ app('request')->input('categories')!=null ? in_array($c->category_name,app('request')->input('categories')) ? 'checked' : '' : ''}}>
                                             <label class="form-check-label" for="flexCheckDefault">
-                                              Category Name
+                                              [Category Name]
                                             </label>
 
                                         </div>

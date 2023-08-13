@@ -13,7 +13,8 @@
     @yield('styles')
 </head>
 <body>
-@includeWhen((Auth::check() && !is_null(Auth::user()->email_verified_at)), 'components.navbar')
+<!-- Validate include navbar when user is logged in and email is verified -->
+@include('components.navbar')
 @yield('content')
 @include('components.footer')
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

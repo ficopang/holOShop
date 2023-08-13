@@ -28,7 +28,9 @@
                         <label class="form-check-label" for="rememberCheck">Remember Me</label>
                     </div>
                     {{-- display first error message if any here --}}
-
+                    @if ($errors->any())
+                        {{$errors->first()}}
+                    @endif
                     <button class="btn w-100">Login</button>
                     <div class="d-flex align-items-center flex-column py-2">
                         <div>Don't have an account ? <a href="{{url('/register')}}">Create one</a></div>

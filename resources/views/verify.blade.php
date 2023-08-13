@@ -4,7 +4,8 @@
         <div class="row justify-content-center align-items-center" style="height: 100vh">
             <div class="col-md-4">
                 <div class="card my-auto">
-                    @if (Auth::check()&&!is_null(Auth::user()->email_verified_at))
+                    <!-- Verification User login and already verified -->
+                    @if (Auth::check() && Auth::user()->email_verified_at)
                         <div class="card-header">Email Has Been Verified</div>
                         <div class="card-body">
                             Your email has been verified, click the button to visit our store
@@ -18,7 +19,7 @@
                         <div class="card-header">Verify Your Email Address</div>
 
                         <div class="card-body">
-                            Hi {{Auth::user()->username}}, you've created a new customer account at hololive production official shop. All you have to do is activate it.
+                            Hi {{ Auth::user()->username }}, you've created a new customer account at hololive production official shop. All you have to do is activate it.
                             @if (session('resent'))
                                 <div class="alert alert-success" role="alert">
                                     {{ __('A fresh verification link has been sent to your email address.') }}
